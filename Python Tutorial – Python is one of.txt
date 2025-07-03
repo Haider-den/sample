@@ -1,0 +1,719 @@
+Python Tutorial – Python is one of the most popular programming languages. It’s simple to use, packed with features and supported by a wide range of libraries and frameworks. Its clean syntax makes it beginner-friendly.
+
+Python is:
+
+A high-level language, used in web development, data science, automation, AI and more.
+Known for its readability, which means code is easier to write, understand and maintain.
+Backed by library support, so we don’t have to build everything from scratch, there’s probably a library that already does what we need.
+
+Python requires fewer lines of code compared to other programming languages.
+Python is in high demand as it provides many job opportunities in Software Development, Data Science and AI/ML.
+Python provides popular Web Development, AI/ML, Data Science and Data Analysis Libraries like Django, Flask, Pandas, Tensorflow, Scikit-learn and many more.
+Python is an object oriented programming language which encapsulates code within object.
+Python is cross-platform which works on Windows, Mac and Linux without major changes.
+Python is used by big companies like Google, Netflix and NASA.
+
+Understanding Hello World Program in Python
+Hello, World! in python is the first python program which we learn when we start learning any program. It’s a simple program that displays the message “Hello, World!” on the screen.
+print() is a built-in Python function that tells the computer to show something on the screen.
+The message "Hello, World!" is a string, which means it's just text. In Python, strings are always written inside quotes (either single ' or double ").
+Anything after # in a line is a comment. Python ignores comments when running the code, but they help people understand what the code is doing.
+Comments are helpful for explaining code, making notes or skipping lines while testin
+  
+
+
+Taking input in Python
+Python input() function is used to take user input. By default, it returns the user input in form of a string. 
+
+Example:
+
+
+
+
+1
+name = input("Enter your name: ")
+2
+print("Hello,", name, "! Welcome!")
+Output
+
+Enter your name: GeeksforGeeks
+Hello, GeeksforGeeks ! Welcome!
+The code prompts the user to input their name, stores it in the variable "name" and then prints a greeting message addressing the user by their entered name.
+
+To learn more about taking input, please refer : Taking Input in Python
+
+Printing Output using print() in Python
+At its core, printing output in Python is straightforward, thanks to the print() function. This function allows us to display text, variables and expressions on the console. Let's begin with the basic usage of the print() function:
+
+In this example, "Hello, World!" is a string literal enclosed within double quotes. When executed, this statement will output the text to the console.
+
+
+
+
+1
+print("Hello, World!")
+
+Output
+Hello, World!
+Printing Variables
+We can use the print() function to print single and multiple variables. We can print multiple variables by separating them with commas. Example:
+
+
+
+
+1
+# Single variable
+2
+s = "Bob"
+3
+print(s)
+4
+​
+5
+# Multiple Variables
+6
+s = "Alice"
+7
+age = 25
+8
+city = "New York"
+9
+print(s, age, city)
+
+Output
+Bob
+Alice 25 New York
+Take Multiple Input in Python
+We are taking multiple input from the user in a single line, splitting the values entered by the user into separate variables for each value using the split() method. Then, it prints the values with corresponding labels, either two or three, based on the number of inputs provided by the user.
+
+
+
+
+1
+# taking two inputs at a time
+2
+x, y = input("Enter two values: ").split()
+3
+print("Number of boys: ", x)
+4
+print("Number of girls: ", y)
+5
+ 
+6
+# taking three inputs at a time
+7
+x, y, z = input("Enter three values: ").split()
+8
+print("Total number of students: ", x)
+9
+print("Number of boys is : ", y)
+10
+print("Number of girls is : ", z)
+Output
+
+Enter two values: 5 10
+Number of boys:  5  
+Number of girls:  10
+Enter three values: 5 10 15
+Total number of students:  5
+Number of boys is :  10     
+Number of girls is :  15  
+Take Conditional Input from user in Python
+In this example, the program prompts the user to enter their age. The input is converted to an integer using the int() function. Then, the program uses conditional statements to check the age range and prints a message based on whether the user is a minor, an adult, or a senior citizen.
+
+
+
+
+1
+# Prompting the user for input
+2
+age_input = input("Enter your age: ")
+3
+​
+4
+# Converting the input to an integer
+5
+age = int(age_input)
+6
+​
+7
+# Checking conditions based on user input
+8
+if age < 0:
+9
+    print("Please enter a valid age.")
+10
+elif age < 18:
+11
+    print("You are a minor.")
+12
+elif age >= 18 and age < 65:
+13
+    print("You are an adult.")
+14
+else:
+15
+    print("You are a senior citizen.")
+Output
+
+Enter your age: 22
+You are an adult.
+How to Change the Type of Input in Python
+By default input() function helps in taking user input as string. If any user wants to take input as int or float, we just need to typecast it.
+
+Print Names in Python
+The code prompts the user to input a string (the color of a rose), assigns it to the variable color and then prints the inputted color.
+
+
+
+
+1
+# Taking input as string
+2
+color = input("What color is rose?: ")
+3
+print(color)
+Output
+
+What color is rose?: RedRed
+Print Numbers in Python
+The code prompts the user to input an integer representing the number of roses, converts the input to an integer using typecasting and then prints the integer value.
+
+
+
+
+1
+# Taking input as int
+2
+# Typecasting to int
+3
+n = int(input("How many roses?: "))
+4
+print(n)
+Output
+
+How many roses?: 88
+Print Float/Decimal Number in Python
+The code prompts the user to input the price of each rose as a floating-point number, converts the input to a float using typecasting and then prints the price.
+
+
+
+
+1
+# Taking input as float
+2
+# Typecasting to float
+3
+price = float(input("Price of each rose?: "))
+4
+print(price)
+Output
+
+Price of each rose?: 50.3050.3
+Find DataType of Input in Python
+In the given example, we are printing the type of variable x. We will determine the type of an object in Python.
+
+
+
+
+1
+a = "Hello World"
+2
+b = 10
+3
+c = 11.22
+4
+d = ("Geeks", "for", "Geeks")
+5
+e = ["Geeks", "for", "Geeks"]
+6
+f = {"Geeks": 1, "for":2, "Geeks":3}
+7
+​
+8
+​
+9
+print(type(a))
+10
+print(type(b))
+11
+print(type(c))
+12
+print(type(d))
+13
+print(type(e))
+14
+print(type(f))
+
+Output
+<class 'str'>
+<class 'int'>
+<class 'float'>
+<class 'tuple'>
+<class 'list'>
+<class 'dict'>
+Output Formatting
+Output formatting in Python with various techniques including the format() method, manipulation of the sep and end parameters, f-strings and the versatile % operator. These methods enable precise control over how data is displayed, enhancing the readability and effectiveness of your Python programs.
+
+Example 1: Using Format()
+
+
+
+
+1
+amount = 150.75
+2
+print("Amount: ${:.2f}".format(amount))
+
+Output
+Amount: $150.75
+Example 2: Using sep and end parameter
+
+
+
+
+1
+# end Parameter with '@'
+2
+print("Python", end='@')
+3
+print("GeeksforGeeks")
+4
+​
+5
+​
+6
+# Seprating with Comma
+7
+print('G', 'F', 'G', sep='')
+8
+​
+9
+# for formatting a date
+10
+print('09', '12', '2016', sep='-')
+11
+​
+12
+# another example
+13
+print('pratik', 'geeksforgeeks', sep='@')
+
+Output
+Python@GeeksforGeeks
+GFG
+09-12-2016
+pratik@geeksforgeeks
+Example 3: Using f-string
+
+
+
+
+1
+name = 'Tushar'
+2
+age = 23
+3
+print(f"Hello, My name is {name} and I'm {age} years old.")
+
+Output
+Hello, My name is Tushar and I'm 23 years old.
+Example 4: Using % Operator
+
+We can use '%' operator. % values are replaced with zero or more value of elements. The formatting using % is similar to that of ‘printf’ in the C programming language.
+
+%d –integer
+%f – float
+%s – string
+%x –hexadecimal
+%o – octal
+
+
+
+1
+# Taking input from the user
+2
+num = int(input("Enter a value: "))
+3
+​
+4
+add = num + 5
+5
+​
+6
+# Output
+7
+print("The sum is %d" %add)
+Output
+
+Enter a value: 50The sum is 55
+Related Posts:
+
+input() function 
+Taking input in Python
+Taking multiple input in Python
+Python – Output Formatting
+Print Single and Multiple variable in Python
+How to take integer input in Python?
+Get a list as input from user in Python
+Get a String as input from user in Python
+Take input from stdin in Python
+Difference between input() and raw_input() functions in Python
+Python Input Methods for Competitive Programming
+
+
+
+n Python, variables are used to store data that can be referenced and manipulated during program execution. A variable is essentially a name that is assigned to a value. Unlike many other programming languages, Python variables do not require explicit declaration of type. The type of the variable is inferred based on the value assigned.
+
+Variables act as placeholders for data. They allow us to store and reuse values in our program.
+
+Example:
+
+
+
+
+1
+# Variable 'x' stores the integer value 10
+2
+x = 5
+3
+​
+4
+# Variable 'name' stores the string "Samantha"
+5
+name = "Samantha"  
+6
+​
+7
+print(x)
+8
+print(name)
+
+Output
+5
+Samantha
+In this article, we’ll explore the concept of variables in Python, including their syntax, characteristics and common operations.
+
+Table of Content
+
+Rules for Naming Variables
+Assigning Values to Variables
+Multiple Assignments
+Type Casting a Variable
+Getting the Type of Variable
+Scope of a Variable
+Object Reference in Python
+Delete a Variable Using del Keyword
+Rules for Naming Variables
+To use variables effectively, we must follow Python’s naming rules:
+
+Variable names can only contain letters, digits and underscores (_).
+A variable name cannot start with a digit.
+Variable names are case-sensitive (myVar and myvar are different).
+Avoid using Python keywords (e.g., if, else, for) as variable names.
+Valid Example:
+
+
+
+
+1
+age = 21
+2
+_colour = "lilac"
+3
+total_score = 90
+Invalid Example:
+
+
+
+
+1
+1name = "Error"  # Starts with a digit
+2
+class = 10       # 'class' is a reserved keyword
+3
+user-name = "Doe"  # Contains a hyphen
+Assigning Values to Variables
+Basic Assignment
+Variables in Python are assigned values using the = operator.
+
+
+
+
+1
+x = 5
+2
+y = 3.14
+3
+z = "Hi"
+Dynamic Typing
+Python variables are dynamically typed, meaning the same variable can hold different types of values during execution.
+
+
+
+
+1
+x = 10
+2
+x = "Now a string"
+Multiple Assignments
+Python allows multiple variables to be assigned values in a single line.
+
+Assigning the Same Value
+Python allows assigning the same value to multiple variables in a single line, which can be useful for initializing variables with the same value.
+
+
+
+
+1
+a = b = c = 100
+2
+print(a, b, c)
+
+Output
+100 100 100
+Assigning Different Values
+We can assign different values to multiple variables simultaneously, making the code concise and easier to read.
+
+
+
+
+1
+x, y, z = 1, 2.5, "Python"
+2
+print(x, y, z)
+
+Output
+1 2.5 Python
+Type Casting a Variable
+Type casting refers to the process of converting the value of one data type into another. Python provides several built-in functions to facilitate casting, including int(), float() and str() among others.
+
+Basic Casting Functions
+int() - Converts compatible values to an integer.
+float() - Transforms values into floating-point numbers.
+str() - Converts any data type into a string.
+Examples of Casting:
+
+
+
+1
+# Casting variables
+2
+s = "10"  # Initially a string
+3
+n = int(s)  # Cast string to integer
+4
+cnt = 5
+5
+f = float(cnt)  # Cast integer to float
+6
+age = 25
+7
+s2 = str(age)  # Cast integer to string
+8
+​
+9
+# Display results
+10
+print(n)  
+11
+print(f)  
+12
+print(s2)
+
+Output
+10
+5.0
+25
+Getting the Type of Variable
+In Python, we can determine the type of a variable using the type() function. This built-in function returns the type of the object passed to it.
+
+Example Usage of type()
+
+
+
+
+1
+# Define variables with different data types
+2
+n = 42
+3
+f = 3.14
+4
+s = "Hello, World!"
+5
+li = [1, 2, 3]
+6
+d = {'key': 'value'}
+7
+bool = True
+8
+​
+9
+# Get and print the type of each variable
+10
+print(type(n))   
+11
+print(type(f)) 
+12
+print(type(s))   
+13
+print(type(li))     
+14
+print(type(d))     
+15
+print(type(bool))
+
+Output
+<class 'int'>
+<class 'float'>
+<class 'str'>
+<class 'list'>
+<class 'dict'>
+<class 'bool'>
+Scope of a Variable
+There are two methods how we define scope of a variable in python which are local and global.
+
+Local Variables:
+Variables defined inside a function are local to that function.
+
+
+
+
+1
+def f():
+2
+    a = "I am local"
+3
+    print(a)
+4
+​
+5
+f()
+6
+# print(a)  # This would raise an error since 'local_var' is not accessible outside the function
+
+Output
+I am local
+Global Variables:
+Variables defined outside any function are global and can be accessed inside functions using the global keyword.
+
+
+
+
+1
+a = "I am global"
+2
+​
+3
+def f():
+4
+    global a
+5
+    a = "Modified globally"
+6
+    print(a)
+7
+​
+8
+f()
+9
+print(a)
+
+Output
+Modified globally
+Modified globally
+Object Reference in Python
+Let us assign a variable x to value 5.
+
+x = 5
+Object References
+When x = 5 is executed, Python creates an object to represent the value 5 and makes x reference this object.
+
+Now, if we assign another variable y to the variable x.
+
+y = x
+Object References in Python
+
+Explanation:
+
+Python encounters the first statement, it creates an object for the value 5 and makes x reference it. The second statement creates y and references the same object as x, not x itself. This is called a Shared Reference, where multiple variables reference the same object.
+Now, if we write
+
+x = 'Geeks'
+Python creates a new object for the value "Geeks" and makes x reference this new object.
+
+
+
+Python Variable
+Explanation:
+
+The variable y remains unchanged, still referencing the original object 5.
+If we now assign a new value to y:
+
+y = "Computer"
+Object References in Python
+Python creates yet another object for "Computer" and updates y to reference it.
+The original object 5 no longer has any references and becomes eligible for garbage collection.
+Key Takeaways:
+Python variables hold references to objects, not the actual objects themselves.
+Reassigning a variable does not affect other variables referencing the same object unless explicitly updated.
+Delete a Variable Using del Keyword
+We can remove a variable from the namespace using the del keyword. This effectively deletes the variable and frees up the memory it was using.
+
+Example:
+
+
+
+1
+# Assigning value to variable
+2
+x = 10
+3
+print(x) 
+4
+​
+5
+# Removing the variable using del
+6
+del x
+7
+​
+8
+# Trying to print x after deletion will raise an error
+9
+# print(x)  # Uncommenting this line will raise NameError: name 'x' is not defined
+Explanation:
+del x removes the variable x from memory.
+After deletion, trying to access the variable x results in a NameError, indicating that the variable no longer exists.
+Practical Examples
+1. Swapping Two Variables
+Using multiple assignments, we can swap the values of two variables without needing a temporary variable.
+
+
+
+
+1
+a, b = 5, 10
+2
+a, b = b, a
+3
+print(a, b)
+
+Output
+10 5
+2. Counting Characters in a String
+Assign the results of multiple operations on a string to variables in one line.
+
+
+
+
+1
+word = "Python"
+2
+length = len(word)
+3
+print("Length of the word:", length)
+
+Output
+Length of the word: 6
